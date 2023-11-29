@@ -6,11 +6,10 @@ pool:
 
 steps:
 - task: AzureKeyVault@2
-  displayName: Get Secrets from Key Vault
   inputs:
     azureSubscription: 'spn_azure_pipeline_subscription'
     KeyVaultName: 'kv-rvdemo'
-    SecretsFilter: '*' # 'DatabasePassword'
+    SecretsFilter: '*'
     RunAsPreJob: false
 
 - task: CmdLine@2

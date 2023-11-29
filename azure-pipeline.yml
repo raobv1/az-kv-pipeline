@@ -10,7 +10,7 @@ steps:
   inputs:
     azureSubscription: 'spn_azure_pipeline_subscription'
     KeyVaultName: 'kv-rvdemo'
-    SecretsFilter: 'user' # 'DatabasePassword'
+    SecretsFilter: '*' # 'DatabasePassword'
     RunAsPreJob: false
 
 - task: CmdLine@2

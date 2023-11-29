@@ -8,7 +8,7 @@ steps:
 - task: AzureKeyVault@2
   displayName: Get Secrets from Key Vault
   inputs:
-    azureSubscription: '63682a20-9d93-4e38-b61c-41668cd8018f'
+    azureSubscription: 'spn-keyvault-devops'
     KeyVaultName: 'kv-rvdemo'
     SecretsFilter: 'user' # 'DatabasePassword'
     RunAsPreJob: false
